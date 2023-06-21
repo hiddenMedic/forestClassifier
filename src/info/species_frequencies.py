@@ -9,4 +9,8 @@ date_delta = 3
 current_trees = trees[abs(picture_date - trees.INVYR) <= date_delta]
 
 species_freq = current_trees.SPCD.value_counts()
-print(species_freq, len(species_freq))
+print(species_freq, len(species_freq), type(species_freq))
+
+print(species_freq.values)
+plt.bar(range(49), species_freq.values)
+plt.show()
