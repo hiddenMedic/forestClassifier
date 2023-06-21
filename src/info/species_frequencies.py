@@ -12,5 +12,5 @@ species_freq = current_trees.SPCD.value_counts()
 print(species_freq, len(species_freq), type(species_freq))
 
 print(species_freq.values)
-plt.bar(range(49), species_freq.values)
+plt.bar(range(len(species_freq.values)), species_freq.values)
 plt.show()
